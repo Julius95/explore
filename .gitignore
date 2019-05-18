@@ -1,0 +1,12 @@
+/.settings
+/.vscode
+/explore-ui/.git
+/explore-ui/.gitignore
+/explore-ui/.settings
+/explore-ui/dist
+/explore-ui/node_modules
+/explore-ui/tmp
+/explore-ui/out-tsc
+/explore/.idea
+/explore/.settings
+/explore/.vscode
