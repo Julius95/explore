@@ -7,6 +7,7 @@
 /explore-ui/node_modules
 /explore-ui/tmp
 /explore-ui/out-tsc
+/explore-ui/node
 /explore/.idea
 /explore/.settings
 /explore/.vscode

@@ -1,0 +1,8 @@
+<div class="container">
+  <h2>Log In</h2>
+  <form [formGroup]='profileForm' (ngSubmit) = 'onSubmit()'>
+        <input name="username" type="text" placeholder="username" formControlName='username'>
+          <input name="password" type="password" placeholder="password" formControlName='password'>
+        <button type="submit" [disabled]="!profileForm.valid">Login</button>
+  </form>
+</div>

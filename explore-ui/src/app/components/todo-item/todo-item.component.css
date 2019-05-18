@@ -1,0 +1,18 @@
+.del{
+    background-color: firebrick;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+}
+
+.todo{
+    background: darkgrey;
+}
+
+.todo-row{
+    margin:0px;
+}
+
+.is-completed{
+    text-decoration: line-through;
+}
