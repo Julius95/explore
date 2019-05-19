@@ -2,9 +2,9 @@
     <h1 class="title">Todo List</h1>
 <nav>
     <ul>
-        <li class="menu-item"><a routerLink='/'>Home</a></li>
-        <li class="menu-item"><a routerLink='/about'>About</a></li>
-        <li><button (click)="logOut()">LogOut</button></li>
+        <li><a routerLink='/'><div  class="menu-item"><mat-icon>home</mat-icon>Home</div></a></li>
+        <li><a routerLink='/about'><div  class="menu-item">About</div></a></li>
+        <li><div class="logout menu-item" (click)="logOut()">Logout<mat-icon>exit_to_app</mat-icon></div></li>
     </ul>
 </nav>
 </header>

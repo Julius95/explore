@@ -13,12 +13,12 @@ ul{
 }
 
 .menu-item{
-    flex: 1;
-    display: flex;
     height: 2em;
-    align-content: center;
-    justify-content: center;
     background-color: #b0e06370;
+    color: #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .menu-item:hover{
@@ -28,21 +28,44 @@ ul{
 	background:-o-linear-gradient(top, #415989 5%, #1e73fa 100%);
 	background:-ms-linear-gradient(top, #415989 5%, #1e73fa 100%);
 	background:linear-gradient(to bottom, #415989 5%, #1e73fa 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#415989', endColorstr='#1e73fa',GradientType=0);
-    background-color:#415989;
-    transition: all ease-in-out 250ms;
-}
-
-li>a{
-    color: #444;
-    text-decoration: none;
-    text-transform: uppercase;
-    flex: 1;
-}
-
-li>a:hover{
+	background-color:#415989;
     color: black;
 }
+
+li{
+    flex:1;
+}
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.logout{
+    height: 100%;
+    cursor: pointer;
+    -moz-box-shadow:inset 0px 1px 0px 0px #f29c93;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #f29c93;
+	box-shadow:inset 0px 1px 0px 0px #f29c93;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fe1a00), color-stop(1, #f76363));
+	background:-moz-linear-gradient(top, #fe1a00 5%, #f76363 100%);
+	background:-webkit-linear-gradient(top, #fe1a00 5%, #f76363 100%);
+	background:-o-linear-gradient(top, #fe1a00 5%, #f76363 100%);
+	background:-ms-linear-gradient(top, #fe1a00 5%, #f76363 100%);
+	background:linear-gradient(to bottom, #fe1a00 5%, #f76363 100%);
+}
+
+.logout:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f76363), color-stop(1, #fe1a00));
+	background:-moz-linear-gradient(top, #f76363 5%, #fe1a00 100%);
+	background:-webkit-linear-gradient(top, #f76363 5%, #fe1a00 100%);
+	background:-o-linear-gradient(top, #f76363 5%, #fe1a00 100%);
+	background:-ms-linear-gradient(top, #f76363 5%, #fe1a00 100%);
+	background:linear-gradient(to bottom, #f76363 5%, #fe1a00 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f76363', endColorstr='#fe1a00',GradientType=0);
+	background-color:#f76363;
+}
+
 
 /*
 li>a:before{

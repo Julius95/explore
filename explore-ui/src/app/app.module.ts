@@ -12,6 +12,7 @@ import { AddTodoComponent } from './components/add-todo/add-todo.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AboutComponent } from './components/pages/about/about.component';
 import { LoginComponent } from './components/login/login.component';
+import {MatIconModule} from '@angular/material';
 import { AuthInterceptor } from './Interceptors/AuthInterceptor';
 
 @NgModule({
@@ -28,6 +29,7 @@ import { AuthInterceptor } from './Interceptors/AuthInterceptor';
     BrowserModule,
     ReactiveFormsModule,
     AppRoutingModule,
+    MatIconModule,
     HttpClientModule,
     FormsModule
   ],
