@@ -12,10 +12,6 @@ export class AuthService {
   
   constructor(private httpClient:HttpClient) { }
 
-  getBasicAuth():string{
-    return 'Basic ' + btoa('admin:admin');
-  }
-
   login(loginPayload, callback: (success: boolean) => void):void{
     const headers = {
       'Authorization': 'Basic ' + btoa('client:client'),

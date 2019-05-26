@@ -18,13 +18,10 @@ export class TodoService {
 
   url:string = '/api/todo';
 
-  constructor(private httpClient:HttpClient, private authService:AuthService) {}
+  constructor(private httpClient:HttpClient) {}
 
   getTodos():Observable<Todo[]>{
-    let headers = {
-      headers: {'Authorization':this.authService.getBasicAuth()}
-    }
-    return this.httpClient.get<Todo[]>(this.url, headers).pipe(map((result:any)=>{
+    return this.httpClient.get<Todo[]>(this.url).pipe(map((result:any)=>{
       return result._embedded.todo;
    }));
   }
@@ -41,5 +38,11 @@ export class TodoService {
 
   addTodo(todo:Todo):Observable<Todo> {
     return this.httpClient.post<Todo>(this.url, todo, httpOptions);
+  }
+
+  findByTitle(title:String):Observable<Todo[]>{
+    return this.httpClient.get<Todo[]>(this.url + '/search/findByTitle?title=' + title).pipe(map((result:any)=>{
+      return result._embedded.todo;
+    }));
   }
 }
